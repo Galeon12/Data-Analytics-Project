@@ -1,6 +1,0 @@
-pandas>=1.0
-numpy>=1.18
-matplotlib>=3.0
-statsmodels>=0.12
-scipy>=1.5
-tabulate>=0.8

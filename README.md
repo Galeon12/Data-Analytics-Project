@@ -40,9 +40,6 @@ The work spans multiple domains and tools, demonstrating proficiency in both **P
 | # | Project | Domain | Language | Focus |
 |---|---------|--------|----------|-------|
 | 1 | [ðŸ¦  COVID-19 Pandemic Analysis](#1-covid-19-pandemic-analysis) | Public Health | Python | Pandemic visualization & EDA |
-| 2 | [ðŸ  Cracow Real Estate Pricing](#2-cracow-real-estate-pricing) | Real Estate | Python | Price prediction with ensemble ML |
-| 3 | [ðŸ’£ Global Terrorism Database](#3-global-terrorism-database) | Security / Policy | R | Geospatial EDA & trend analysis |
-| 4 | [âŒš Polar Watch â€” Workout Vitals](#4-polar-watch--workout-vitals) | Sports Analytics | Python | Statistical modeling of fitness data |
 | 5 | [ðŸ“ˆ FX Trading Algorithm Analysis](#5-fx-trading-algorithm-analysis) | Quantitative Finance | Python | Algorithm performance & risk metrics |
 
 ---
@@ -52,9 +49,6 @@ The work spans multiple domains and tools, demonstrating proficiency in both **P
 | Project | Key Result |
 |---------|-----------|
 | COVID-19 | ~35M cases analyzed; rural pop vs. cases correlation: -0.46 |
-| Cracow Real Estate | VotingRegressor ensemble outperformed MLP, GBR, and baseline |
-| Global Terrorism | 11-year EDA; ISIL, Taliban, Al-Qaida among deadliest groups |
-| Polar Watch | Mixed model RMSE 61 vs. 79 (OLS); 283 workouts analyzed |
 | FX Trading | 92 trades; 40% win rate; Monte Carlo: 100K simulations |
 
 ---
@@ -79,67 +73,7 @@ A multi-notebook end-to-end exploratory data analysis of the COVID-19 pandemic. 
 
 ---
 
-## 2. Flats in Cracow
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/Status-Completed-green" alt="Status">
-  <img src="https://img.shields.io/badge/Scikit--learn-ML-blue" alt="Scikit-learn">
-</p>
-
-A complete data science workflow for predicting residential flat sale prices in Cracow, Poland â€” from web-scraped listing data through cleaning, exploratory analysis, feature engineering, and ensemble regression modeling.
-
-### Key Highlights
-- **Ensemble modeling:** VotingRegressor combining MLP and Gradient Boosting
-- **Rich feature engineering:** 8+ derived features including log-transforms and ratio features
-- **Comprehensive preprocessing:** KNN imputation, one-hot encoding, min-max scaling
-- **Interpretability:** District-level price analysis reveals central vs. outlying area premiums
-
-[ðŸ“‚ View Project](cracow-real-estate-pricing/)
-
----
-
-## 3. Global Terrorism Database
-
-<p align="center">
-  <img src="https://img.shields.io/badge/R-4.0%2B-blue?logo=r" alt="R">
-  <img src="https://img.shields.io/badge/Status-Completed-green" alt="Status">
-  <img src="https://img.shields.io/badge/Tidyverse-EDA-blue" alt="Tidyverse">
-</p>
-
-An exploratory data analysis and geospatial visualization of the Global Terrorism Database (GTD), covering 2007â€“2017. Examines attack patterns, casualty distributions, weapon and target types, and the most active terrorist organizations.
-
-### Key Highlights
-- **11-year window:** 2007â€“2017, filtered to confirmed terrorist incidents
-- **Geospatial mapping:** Annotation-style maps of group activity
-- **Multidimensional analysis:** Time, geography, attack type, weapon, target, and perpetrator
-- **Rich visualizations:** Faceted time series, correlation matrices, tile plots, stacked area charts
-
-[ðŸ“‚ View Project](global-terrorism-eda/)
-
----
-
-## 4. Polar Watch â€” Workout Vitals
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python">
-  <img src="https://img.shields.io/badge/Status-Completed-green" alt="Status">
-  <img src="https://img.shields.io/badge/Statsmodels-Modeling-blue" alt="Statsmodels">
-</p>
-
-A statistical analysis of workout data exported from a Polar watch. Heart-rate distributions, caloric expenditure, session duration, and sport-type differences are examined, with a focus on comparing strength training against cardiovascular activity.
-
-### Key Highlights
-- **283 workouts** analyzed over ~1 year
-- **Statistical rigor:** OLS regression, linear mixed models, VIF, Goldfeld-Quandt, Shapiro-Wilk, Q-Q plots
-- **Activity comparison:** Strength vs. cardio heart-rate profiles
-- **Caloric modeling:** RMSE 79 (OLS) â†’ 61 (mixed model), RÂ² up to 0.98 by sport
-
-[ðŸ“‚ View Project](polar/)
-
----
-
-## 5. Trading Results Analysis
+## 2. Trading Results Analysis
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python" alt="Python">
@@ -165,7 +99,6 @@ Walk-forward performance analysis of an algorithmic trading system. Examines 92 
 | Tool | Purpose |
 |------|---------|
 | Python 3.8+ | Primary language for 4 of 5 projects |
-| R 4.0+ | Global Terrorism analysis |
 | Jupyter Notebooks | All analysis and modeling |
 | Git | Version control |
 
@@ -175,15 +108,10 @@ Walk-forward performance analysis of an algorithmic trading system. Examines 92 
 | Pandas | Data manipulation | All Python projects |
 | NumPy | Numerical computing | All Python projects |
 | Matplotlib | Visualization | All projects |
-| Scikit-learn | ML preprocessing & modeling | Flats in Cracow |
-| Statsmodels | Statistical modeling | Polar |
-| Scipy | Statistics & distributions | Polar, Trading |
+| Scipy | Statistics & distributions | Trading |
 | wbdata | World Bank API access | COVID-19 |
-| tabulate | Table formatting | Polar |
 
-### R Libraries
-| Library | Purpose |
-|---------|---------|
+---------|---------|
 | tidyverse (`dplyr`, `ggplot2`, `tidyr`) | Data manipulation & viz |
 | GGally | Matrix & pair plots |
 | rworldmap / mapproj | Geospatial visualization |
@@ -200,9 +128,6 @@ Each project includes a `requirements.txt` (or `requirements.R` equivalent) for 
 | Project | Install Command |
 |---------|-----------------|
 | COVID-19 | `pip install -r covid19-pandemic-analysis/requirements.txt` |
-| Cracow Real Estate | `pip install -r cracow-real-estate-pricing/requirements.txt` |
-| Global Terrorism (R) | See `global-terrorism-eda/requirements.txt` |
-| Polar Watch | `pip install -r polar-watch-fitness-analysis/requirements.txt` |
 | FX Trading | `pip install -r fx-trading-analysis/requirements.txt` |
 
 ---
@@ -211,7 +136,6 @@ Each project includes a `requirements.txt` (or `requirements.R` equivalent) for 
 
 ### Prerequisites
 - Python 3.8+
-- R 4.0+ (for Global Terrorism project only)
 - Jupyter Notebook or JupyterLab
 
 ### Installation
@@ -221,11 +145,8 @@ Each project includes a `requirements.txt` (or `requirements.R` equivalent) for 
 git clone https://github.com/Galeon12/Data-Analytics-Projects-in-python.git
 cd Data-Analytics-Projects-in-python
 
-# Install Python dependencies (example for Flats in Cracow)
-pip install pandas numpy matplotlib scikit-learn joblib
-
-# Install R dependencies (for Global Terrorism)
-install.packages(c("tidyverse", "GGally", "rworldmap", "ggrepel", "mapproj", "lubridate", "scales"))
+# Install Python dependencies
+pip install pandas numpy matplotlib
 ```
 
 Each project folder contains a dedicated `README.md` with specific setup instructions.

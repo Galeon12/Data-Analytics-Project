@@ -1,9 +1,0 @@
-# R packages for Global Terrorism EDA
-# Install with: install.packages(c("tidyverse", "GGally", "rworldmap", "ggrepel", "mapproj", "lubridate", "scales", "grid"))
-tidyverse>=1.3.0
-GGally>=1.5
-rworldmap>=1.3
-ggrepel>=0.9
-mapproj>=1.2
-lubridate>=1.7
-scales>=1.1

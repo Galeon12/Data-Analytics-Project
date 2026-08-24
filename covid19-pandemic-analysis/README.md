@@ -1,4 +1,4 @@
-﻿# COVID-19 Pandemic Analysis
+# COVID-19 Pandemic Analysis
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white" alt="Python">
@@ -14,7 +14,7 @@
 
 ---
 
-## ðŸ“‘ Table of Contents
+## 📑 Table of Contents
 
 - [About This Project](#about-this-project)
 - [Problem Statement](#problem-statement)
@@ -35,7 +35,7 @@
 
 ## About This Project
 
-This project provides a comprehensive analysis of the SARS-CoV-2 pandemic using open-source data. The analysis is organized into five Jupyter notebooks covering the full data pipeline â€” from raw data ingestion to publication-ready visualizations.
+This project provides a comprehensive analysis of the SARS-CoV-2 pandemic using open-source data. The analysis is organized into five Jupyter notebooks covering the full data pipeline — from raw data ingestion to publication-ready visualizations.
 
 The project demonstrates:
 - **Automated data pipelines** for daily epidemic surveillance
@@ -61,13 +61,13 @@ The COVID-19 pandemic spread rapidly across the world, but the pace and severity
 | Source | Description | URL |
 |--------|-------------|-----|
 | JHU CSSE COVID-19 Data | Daily time series of confirmed, recovered, dead, and active cases by country | [GitHub](https://github.com/CSSEGISandData/COVID-19) |
-| World Bank â€” GDP per capita PPP | Economic indicator by country | [data.worldbank.org](https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD) |
-| World Bank â€” Population | Total population | [data.worldbank.org](https://data.worldbank.org/indicator/SP.POP.TOTL) |
-| World Bank â€” Urban Population | Urban population percentage | [data.worldbank.org](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) |
-| World Bank â€” Slum Population | Population living in slums | [data.worldbank.org](https://data.worldbank.org/indicator/EN.POP.SLUM.UR.ZS) |
-| World Bank â€” Rural Population | Rural population percentage | [data.worldbank.org](https://data.worldbank.org/indicator/SP.RUR.TOTL.ZS) |
-| World Bank â€” Life Expectancy | Life expectancy at birth | [data.worldbank.org](https://data.worldbank.org/indicator/SP.DYN.LE00.IN) |
-| World Bank â€” Healthcare Expenditure | Current healthcare expenditure (% of GDP) | [data.worldbank.org](https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS) |
+| World Bank — GDP per capita PPP | Economic indicator by country | [data.worldbank.org](https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD) |
+| World Bank — Population | Total population | [data.worldbank.org](https://data.worldbank.org/indicator/SP.POP.TOTL) |
+| World Bank — Urban Population | Urban population percentage | [data.worldbank.org](https://data.worldbank.org/indicator/SP.URB.TOTL.IN.ZS) |
+| World Bank — Slum Population | Population living in slums | [data.worldbank.org](https://data.worldbank.org/indicator/EN.POP.SLUM.UR.ZS) |
+| World Bank — Rural Population | Rural population percentage | [data.worldbank.org](https://data.worldbank.org/indicator/SP.RUR.TOTL.ZS) |
+| World Bank — Life Expectancy | Life expectancy at birth | [data.worldbank.org](https://data.worldbank.org/indicator/SP.DYN.LE00.IN) |
+| World Bank — Healthcare Expenditure | Current healthcare expenditure (% of GDP) | [data.worldbank.org](https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS) |
 | Country & Continent Codes | Country-to-continent mapping | [Datahub](https://datahub.io/JohnSnowLabs/country-and-continent-codes-list) |
 
 ---
@@ -76,29 +76,29 @@ The COVID-19 pandemic spread rapidly across the world, but the pace and severity
 
 ```
 covid19-pandemic-analysis/
-â”œâ”€â”€ data/
-â”‚   â””â”€â”€ download_data.py              # Automated data download script
-â”œâ”€â”€ features/                         # Data processing pipeline
-â”‚   â”œâ”€â”€ make_all.py                   # Master pipeline runner
-â”‚   â”œâ”€â”€ make_cases.py                 # JHU CSSE case ingestion
-â”‚   â”œâ”€â”€ make_cases_daily_change.py    # Daily differencing
-â”‚   â”œâ”€â”€ make_cases_since_t0.py        # Reindexed time series
-â”‚   â”œâ”€â”€ make_continents.py            # Continent aggregation
-â”‚   â”œâ”€â”€ make_coordinates.py           # Geo coordinate mapping
-â”‚   â”œâ”€â”€ make_country_stats.py         # Country-level summaries
-â”‚   â”œâ”€â”€ make_country_to_continent.py  # Country-to-continent mapping
-â”‚   â”œâ”€â”€ make_mortality.py             # Mortality rate calculation
-â”‚   â”œâ”€â”€ make_world_bank.py            # World Bank indicator ingestion
-â”‚   â””â”€â”€ utils.py                      # Shared utilities
-â”œâ”€â”€ visualizations/
-â”‚   â””â”€â”€ covid_data_viz.py             # Reusable CovidDataViz plotting class
-â”œâ”€â”€ notebooks/                        # Analysis notebooks
-â”‚   â”œâ”€â”€ Data-wrangling.ipynb          # Data pipeline documentation
-â”‚   â”œâ”€â”€ Exploratory-analysis-globally.ipynb   # World & continent trends
-â”‚   â”œâ”€â”€ Exploratory_analysis_fancy_plot.ipynb  # Publication-ready visual
-â”‚   â”œâ”€â”€ Exploratory-analysis-mortality.ipynb   # Country-level mortality
-â”‚   â””â”€â”€ Exploratory_analysis_socioeconomic.ipynb # World Bank correlations
-â””â”€â”€ tests/
+├── data/
+│   └── download_data.py              # Automated data download script
+├── features/                         # Data processing pipeline
+│   ├── make_all.py                   # Master pipeline runner
+│   ├── make_cases.py                 # JHU CSSE case ingestion
+│   ├── make_cases_daily_change.py    # Daily differencing
+│   ├── make_cases_since_t0.py        # Reindexed time series
+│   ├── make_continents.py            # Continent aggregation
+│   ├── make_coordinates.py           # Geo coordinate mapping
+│   ├── make_country_stats.py         # Country-level summaries
+│   ├── make_country_to_continent.py  # Country-to-continent mapping
+│   ├── make_mortality.py             # Mortality rate calculation
+│   ├── make_world_bank.py            # World Bank indicator ingestion
+│   └── utils.py                      # Shared utilities
+├── visualizations/
+│   └── covid_data_viz.py             # Reusable CovidDataViz plotting class
+├── notebooks/                        # Analysis notebooks
+│   ├── Data-wrangling.ipynb          # Data pipeline documentation
+│   ├── Exploratory-analysis-globally.ipynb   # World & continent trends
+│   ├── Exploratory_analysis_fancy_plot.ipynb  # Publication-ready visual
+│   ├── Exploratory-analysis-mortality.ipynb   # Country-level mortality
+│   └── Exploratory_analysis_socioeconomic.ipynb # World Bank correlations
+└── tests/
 ```
 
 ---
@@ -122,7 +122,7 @@ All raw and processed data is stored under `data/processed/` with the following 
 | `confirmed_cases_since_t0.csv` | Reindexed time series (days since 100th case) |
 | `recovered_cases.csv` | Cumulative recovered cases |
 | `dead_cases.csv` | Cumulative deaths |
-| `active_cases.csv` | Active cases = confirmed âˆ’ recovered âˆ’ dead |
+| `active_cases.csv` | Active cases = confirmed − recovered − dead |
 | `mortality_rate.csv` | Mortality rate = dead / confirmed |
 | `coordinates.csv` | Country geo coordinates |
 | `continents.csv` | Continent assignments |
@@ -138,7 +138,7 @@ The raw JHU CSSE data undergoes several transformations:
 - **Filtering:** Cases occurring on boats/cruise ships are excluded.
 - **Derived metrics:**
   - `mortality rate = dead / confirmed`
-  - `active cases = confirmed âˆ’ recovered âˆ’ dead`
+  - `active cases = confirmed − recovered − dead`
 - **Date handling:** Time series are parsed and aligned across all countries.
 - **Missing values:** Forward-filled where appropriate; countries with insufficient data are flagged.
 
@@ -157,12 +157,12 @@ The raw JHU CSSE data undergoes several transformations:
 
 The `CovidDataViz` class provides a unified interface for all plots:
 
-- **World-level:** `plot_world_cases()` â€” stacked area chart of global cases
-- **Continent-level:** `plot_continent_cases(continent)` â€” breakdown by continent
-- **Country-level:** `plot_country_cases(country)`, `plot_country_cases_chg(country)` â€” time series and daily changes
-- **Rankings:** `plot_highest_country_stats(metric)` â€” top-N countries by confirmed, recovered, dead, active, or mortality
-- **Growth analysis:** `plot_growth(countries, periods)` â€” growth factor trends with configurable averaging windows
-- **Socioeconomic:** `show_corr_mat()` â€” correlation matrix; `plot_with_slope(x, y)` â€” scatter plots with regression lines
+- **World-level:** `plot_world_cases()` — stacked area chart of global cases
+- **Continent-level:** `plot_continent_cases(continent)` — breakdown by continent
+- **Country-level:** `plot_country_cases(country)`, `plot_country_cases_chg(country)` — time series and daily changes
+- **Rankings:** `plot_highest_country_stats(metric)` — top-N countries by confirmed, recovered, dead, active, or mortality
+- **Growth analysis:** `plot_growth(countries, periods)` — growth factor trends with configurable averaging windows
+- **Socioeconomic:** `show_corr_mat()` — correlation matrix; `plot_with_slope(x, y)` — scatter plots with regression lines
 
 ---
 
@@ -172,7 +172,7 @@ The `CovidDataViz` class provides a unified interface for all plots:
 - By **October 2020**, global confirmed cases approached **35 million**.
 - **Asia** exhibited sustained exponential growth, driven largely by **India**.
 - **Australia** had the lowest confirmed case count among continents.
-- Most countries were able to suppress exponential growth within **30â€“40 days** of reaching their 100th case.
+- Most countries were able to suppress exponential growth within **30–40 days** of reaching their 100th case.
 - **Italy** experienced a massive early surge; the **United Kingdom** showed evidence of a second wave during the analysis period.
 
 ### Country-Level Patterns
@@ -193,7 +193,7 @@ The `CovidDataViz` class provides a unified interface for all plots:
 ### Key Metrics Summary
 | Metric | Value | Context |
 |--------|-------|---------|
-| Analysis window | Dec 2019 â€“ Oct 2020 | Early pandemic phase |
+| Analysis window | Dec 2019 – Oct 2020 | Early pandemic phase |
 | Global confirmed cases | ~35 million | As of 2020-10-05 |
 | Countries analyzed | 200+ | All countries with reported cases |
 | Socioeconomic indicators | 7 | GDP, population, healthcare, life expectancy, rural/urban |
@@ -204,8 +204,8 @@ The `CovidDataViz` class provides a unified interface for all plots:
 ## Limitations
 
 - **Data latency:** JHU CSSE data reflects reported cases, not true infections; testing availability varied drastically across countries.
-- **Socioeconomic snapshot:** World Bank indicators are static, year-level values â€” they do not capture within-year policy changes or healthcare system strain during the pandemic.
-- **Correlation â‰  causation:** The observed correlations (e.g., rural population vs. cases) are ecological and do not imply individual-level causality.
+- **Socioeconomic snapshot:** World Bank indicators are static, year-level values — they do not capture within-year policy changes or healthcare system strain during the pandemic.
+- **Correlation ≠ causation:** The observed correlations (e.g., rural population vs. cases) are ecological and do not imply individual-level causality.
 - **Outlier sensitivity:** Yemen and other low-reporting countries were excluded, potentially biasing correlation estimates.
 - **Time window:** Analysis is limited to the first 10 months of the pandemic; long-term trends and vaccine effects are not captured.
 
@@ -213,7 +213,7 @@ The `CovidDataViz` class provides a unified interface for all plots:
 
 ## Next Steps
 
-- **Extend time window** to include 2021â€“2022 data and compare pre-/post-vaccination dynamics.
+- **Extend time window** to include 2021–2022 data and compare pre-/post-vaccination dynamics.
 - **Multivariate regression** to isolate the effect of each socioeconomic indicator while controlling for confounders.
 - **Phylogenetic / mobility data integration** (e.g., Google Mobility Reports) to model spread mechanics.
 - **Interactive dashboard** using Plotly Dash or Streamlit for real-time exploration.
@@ -233,20 +233,20 @@ This analysis is pinned to the **JHU CSSE snapshot from October 2020**. To repro
 ### Data Pipeline Architecture
 ```
 Raw JHU CSSE CSVs
-       â†“
-make_cases.py â†’ confirmed_cases.csv, recovered_cases.csv, dead_cases.csv
-       â†“
-make_cases_daily_change.py â†’ confirmed_cases_daily_change.csv
-       â†“
-make_cases_since_t0.py â†’ confirmed_cases_since_t0.csv
-       â†“
-make_mortality.py â†’ mortality_rate.csv
-       â†“
-make_continents.py + make_country_to_continent.py â†’ continents.csv, country_to_continent.csv
-       â†“
-make_world_bank.py â†’ world_bank.csv
-       â†“
-CovidDataViz class â†’ reusable plotting methods
+       ↓
+make_cases.py → confirmed_cases.csv, recovered_cases.csv, dead_cases.csv
+       ↓
+make_cases_daily_change.py → confirmed_cases_daily_change.csv
+       ↓
+make_cases_since_t0.py → confirmed_cases_since_t0.csv
+       ↓
+make_mortality.py → mortality_rate.csv
+       ↓
+make_continents.py + make_country_to_continent.py → continents.csv, country_to_continent.csv
+       ↓
+make_world_bank.py → world_bank.csv
+       ↓
+CovidDataViz class → reusable plotting methods
 ```
 
 ### Processing Notes
@@ -313,7 +313,7 @@ jupyter notebook
 | `Exploratory-analysis-globally.ipynb` | World and continent-level trends; early pandemic dynamics | World case plots, continent breakdowns, growth factor analysis |
 | `Exploratory-analysis-mortality.ipynb` | Country-level mortality analysis; time series of cases and daily changes | Country case plots, daily change plots, mortality rankings |
 | `Exploratory_analysis_socioeconomic.ipynb` | World Bank correlations; mortality vs. socioeconomic indicators | Correlation matrix, scatter plots with regression slopes |
-| `Exploratory_analysis_fancy_plot.ipynb` | Publication-ready heatmap visualization for repository README | `covid_tiles.png` (1600Ã—800, 200 DPI) |
+| `Exploratory_analysis_fancy_plot.ipynb` | Publication-ready heatmap visualization for repository README | `covid_tiles.png` (1600×800, 200 DPI) |
 
 ---
 
@@ -322,10 +322,9 @@ jupyter notebook
 **Chandan saraswat**
 
 - GitHub: [@Galeon12](https://github.com/Galeon12)
-- LinkedIn: [in/Galeon12](https://linkedin.com/in/Galeon12)
 
 ---
 
 <p align="center">
-  <a href="../README.md">â† Back to repository root</a>
+  <a href="../README.md">← Back to repository root</a>
 </p>

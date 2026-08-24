@@ -230,7 +230,6 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 **Chandan saraswat**
 
 - GitHub: [@Galeon12](https://github.com/Galeon12)
-- LinkedIn: [in/Galeon12](https://linkedin.com/in/Galeon12)
 
 ---
 

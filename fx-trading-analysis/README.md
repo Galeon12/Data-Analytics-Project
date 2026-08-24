@@ -1,4 +1,4 @@
-﻿# Trading Results Analysis
+# Trading Results Analysis
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white" alt="Python">
@@ -299,7 +299,6 @@ This project uses **financial trading data** containing instrument names, profit
 **Chandan saraswat**
 
 - GitHub: [@Galeon12](https://github.com/Galeon12)
-- LinkedIn: [in/Galeon12](https://linkedin.com/in/Galeon12)
 
 ---
 

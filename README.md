@@ -1,4 +1,4 @@
-﻿# Data Analytics Projects
+# Data Analytics Projects
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue?logo=python&logoColor=white" alt="Python">
@@ -14,7 +14,7 @@
 
 ---
 
-## ðŸ“‘ Table of Contents
+## 📑 Table of Contents
 
 - [About This Repository](#about-this-repository)
 - [Projects Overview](#projects-overview)
@@ -29,7 +29,7 @@
 
 ## About This Repository
 
-This repository contains a curated collection of **data analytics and data science projects** completed as part of an ongoing portfolio. Each project follows a rigorous workflow: problem formulation â†’ data acquisition â†’ cleaning â†’ exploratory analysis â†’ modeling â†’ interpretation.
+This repository contains a curated collection of **data analytics and data science projects** completed as part of an ongoing portfolio. Each project follows a rigorous workflow: problem formulation → data acquisition → cleaning → exploratory analysis → modeling → interpretation.
 
 The work spans multiple domains and tools, demonstrating proficiency in both **Python** and **R**, statistical modeling, machine learning, geospatial analysis, and financial time-series analytics.
 
@@ -39,8 +39,8 @@ The work spans multiple domains and tools, demonstrating proficiency in both **P
 
 | # | Project | Domain | Language | Focus |
 |---|---------|--------|----------|-------|
-| 1 | [ðŸ¦  COVID-19 Pandemic Analysis](#1-covid-19-pandemic-analysis) | Public Health | Python | Pandemic visualization & EDA |
-| 5 | [ðŸ“ˆ FX Trading Algorithm Analysis](#5-fx-trading-algorithm-analysis) | Quantitative Finance | Python | Algorithm performance & risk metrics |
+| 1 | [🦠 COVID-19 Pandemic Analysis](#1-covid-19-pandemic-analysis) | Public Health | Python | Pandemic visualization & EDA |
+| 2 | [📈 FX Trading Algorithm Analysis](#5-fx-trading-algorithm-analysis) | Quantitative Finance | Python | Algorithm performance & risk metrics |
 
 ---
 
@@ -69,7 +69,7 @@ A multi-notebook end-to-end exploratory data analysis of the COVID-19 pandemic. 
 - **Socioeconomic integration:** Correlates pandemic metrics with GDP, life expectancy, rural population, and healthcare expenditure
 - **Reusable architecture:** Custom `CovidDataViz` class for reproducible plotting
 
-[ðŸ“‚ View Project](covid19-pandemic-analysis/)
+[📂 View Project](covid19-pandemic-analysis/)
 
 ---
 
@@ -89,7 +89,7 @@ Walk-forward performance analysis of an algorithmic trading system. Examines 92 
 - **Distribution analysis:** Profit-per-lot characterized by skew, kurtosis, and fitted distributions
 - **Timing edge:** Identified profitable intraday patterns (2pm, 4pm)
 
-[ðŸ“‚ View Project](fx-trading-analysis/)
+[📂 View Project](fx-trading-analysis/)
 
 ---
 
@@ -157,52 +157,52 @@ Each project folder contains a dedicated `README.md` with specific setup instruc
 
 ```
 Data-Analytics-Projects-in-python/
-â”œâ”€â”€ README.md                           # This file
-â”œâ”€â”€ LICENSE
-â”œâ”€â”€ covid19-pandemic-analysis/         # ðŸ¦  Pandemic visualization
-â”‚   â”œâ”€â”€ data/
-â”‚   â”‚   â””â”€â”€ download_data.py
-â”‚   â”œâ”€â”€ features/
-â”‚   â”‚   â”œâ”€â”€ make_all.py
-â”‚   â”‚   â”œâ”€â”€ make_cases.py
-â”‚   â”‚   â”œâ”€â”€ make_cases_daily_change.py
-â”‚   â”‚   â”œâ”€â”€ make_cases_since_t0.py
-â”‚   â”‚   â”œâ”€â”€ make_continents.py
-â”‚   â”‚   â”œâ”€â”€ make_coordinates.py
-â”‚   â”‚   â”œâ”€â”€ make_country_stats.py
-â”‚   â”‚   â”œâ”€â”€ make_country_to_continent.py
-â”‚   â”‚   â”œâ”€â”€ make_mortality.py
-â”‚   â”‚   â”œâ”€â”€ make_world_bank.py
-â”‚   â”‚   â””â”€â”€ utils.py
-â”‚   â”œâ”€â”€ visualizations/
-â”‚   â”‚   â””â”€â”€ covid_data_viz.py
-â”‚   â”œâ”€â”€ notebooks/
-â”‚   â”‚   â”œâ”€â”€ Data-wrangling.ipynb
-â”‚   â”‚   â”œâ”€â”€ Exploratory-analysis-globally.ipynb
-â”‚   â”‚   â”œâ”€â”€ Exploratory_analysis_fancy_plot.ipynb
-â”‚   â”‚   â”œâ”€â”€ Exploratory-analysis-mortality.ipynb
-â”‚   â”‚   â””â”€â”€ Exploratory_analysis_socioeconomic.ipynb
-â”‚   â””â”€â”€ tests/
-â”œâ”€â”€ cracow-real-estate-pricing/        # ðŸ  Real estate ML
-â”‚   â”œâ”€â”€ 00_Data_Wrangling.ipynb
-â”‚   â”œâ”€â”€ 00_Data_Wrangling.pdf
-â”‚   â”œâ”€â”€ 01_Exploratory_Analysis.ipynb
-â”‚   â”œâ”€â”€ 01_Exploratory_Analysis.pdf
-â”‚   â”œâ”€â”€ 02_Model.ipynb
-â”‚   â”œâ”€â”€ 02_Model.pdf
-â”‚   â””â”€â”€ img/
-â”œâ”€â”€ global-terrorism-eda/              # ðŸ’£ Terrorism EDA
-â”‚   â”œâ”€â”€ Global Terrorism.ipynb
-â”‚   â””â”€â”€ img/
-â”œâ”€â”€ polar-watch-fitness-analysis/      # âŒš Sports statistics
-â”‚   â”œâ”€â”€ Polar.ipynb
-â”‚   â”œâ”€â”€ Polar.pdf
-â”‚   â”œâ”€â”€ mdl_results.txt
-â”‚   â””â”€â”€ img/
-â””â”€â”€ fx-trading-analysis/               # ðŸ“ˆ Algorithmic trading
-    â”œâ”€â”€ Trading Results Analysis.ipynb
-    â”œâ”€â”€ Trading Results Analysis.pdf
-    â””â”€â”€ img/
+├── README.md                           # This file
+├── LICENSE
+├── covid19-pandemic-analysis/         # 🦠 Pandemic visualization
+│   ├── data/
+│   │   └── download_data.py
+│   ├── features/
+│   │   ├── make_all.py
+│   │   ├── make_cases.py
+│   │   ├── make_cases_daily_change.py
+│   │   ├── make_cases_since_t0.py
+│   │   ├── make_continents.py
+│   │   ├── make_coordinates.py
+│   │   ├── make_country_stats.py
+│   │   ├── make_country_to_continent.py
+│   │   ├── make_mortality.py
+│   │   ├── make_world_bank.py
+│   │   └── utils.py
+│   ├── visualizations/
+│   │   └── covid_data_viz.py
+│   ├── notebooks/
+│   │   ├── Data-wrangling.ipynb
+│   │   ├── Exploratory-analysis-globally.ipynb
+│   │   ├── Exploratory_analysis_fancy_plot.ipynb
+│   │   ├── Exploratory-analysis-mortality.ipynb
+│   │   └── Exploratory_analysis_socioeconomic.ipynb
+│   └── tests/
+├── cracow-real-estate-pricing/        # 🏠 Real estate ML
+│   ├── 00_Data_Wrangling.ipynb
+│   ├── 00_Data_Wrangling.pdf
+│   ├── 01_Exploratory_Analysis.ipynb
+│   ├── 01_Exploratory_Analysis.pdf
+│   ├── 02_Model.ipynb
+│   ├── 02_Model.pdf
+│   └── img/
+├── global-terrorism-eda/              # 💣 Terrorism EDA
+│   ├── Global Terrorism.ipynb
+│   └── img/
+├── polar-watch-fitness-analysis/      # ⌚ Sports statistics
+│   ├── Polar.ipynb
+│   ├── Polar.pdf
+│   ├── mdl_results.txt
+│   └── img/
+└── fx-trading-analysis/               # 📈 Algorithmic trading
+    ├── Trading Results Analysis.ipynb
+    ├── Trading Results Analysis.pdf
+    └── img/
 ```
 
 ---
@@ -235,5 +235,5 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 ---
 
 <p align="center">
-  Built with â¤ï¸ and a lot of â˜•
+  Built with ❤️ and a lot of ☕
 </p>
